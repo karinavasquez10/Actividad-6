@@ -5,6 +5,8 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import ProductDetail from './components/ProductDetails';
 import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
+import Portfolio from './pages/Portfolio';
 import './styles.css';
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
       </div>
     </Router>
