@@ -50,7 +50,7 @@ function Portfolio() {
       <header className="portfolio-header">
         <div className="profile-section">
           <img 
-            src="src\assets\Imagen de WhatsApp 2024-10-14 a las 12.17.23_879c9573.jpg" 
+            src="src\assets\Imagen.jpg" 
             alt="" 
             className="profile-image"
           />
