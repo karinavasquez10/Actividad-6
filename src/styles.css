@@ -634,19 +634,8 @@ nav ul li a:hover {
   transform: translateY(-2px);
 }
 
-/* Contact Section */
-.contact-section {
-  background: white;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: var(--box-shadow);
-  margin-top: 60px;
-  text-align: center;
-}
+/* links de los enlaces en mi portafolio */
 
-.contact-info {
-  margin-top: 20px;
-}
 
 .social-links {
   display: flex;

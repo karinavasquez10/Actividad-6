@@ -1,26 +1,47 @@
 import React from 'react';
-import { FaHtml5, FaCss3Alt, FaReact, FaJs, FaGithub, FaLinkedin } from 'react-icons/fa';
-import { SiTailwindcss, SiFirebase } from 'react-icons/si';
+import {  FaGithub, FaLinkedin } from 'react-icons/fa';
+
 
 function Portfolio() {
   const projects = [
     {
       title: "Distribuidora Belleza",
-      description: "E-commerce de productos de belleza desarrollado con React y Firebase",
-      image: "/path/to/project-image.jpg",
-      technologies: ["React", "Firebase", "CSS"],
-      link: "https://github.com/karinavasquez10/distribuidora-belleza"
+      description: "pagina de productos de belleza desarrollado con React y javascript, ademas de otras librerias adicionales",
+      technologies: ["React", "Javascript", "CSS"],
+      link: "https://github.com/karinavasquez10/Pagina-web-Tienda.git"
     },
-    // Agrega aquí más proyectos
+
+    {
+        title: "Proyecto Restaurante",
+        description: "Proyecto  de reservas  de mesa en un restaurante con Java y MySQL",
+        technologies: ["Java", "MySQL",],
+        link: "https://github.com/karinavasquez10/distribuidora-belleza"
+      },
+      {
+        title: "Proyecto Aeropuerto",
+        description: "Proyecto  de reservas  de vuelos en un aeropuerto, ademas proporciona seleccion de rutas y seleccion de asientos, con Java y MySQL",
+        technologies: ["Java", "MySQL",],
+        link: "https://github.com/karinavasquez10/distribuidora-belleza"
+      },
+      {
+        title: "Feline Care",
+        description: "pagina que proporciona informacion acerca de las diferentes tipos de razas de felinos, su cuidado y su comportamiento, desarrollado con React y javascript, ademas de otras librerias adicionales",
+        technologies: ["React", "Javascript", "CSS"],
+        link: "https://github.com/karinavasquez10/FelineCare.git"
+      },
+      
   ];
 
   const skills = [
-    { name: "HTML5", icon: <FaHtml5 />, level: "90%" },
-    { name: "CSS3", icon: <FaCss3Alt />, level: "85%" },
-    { name: "JavaScript", icon: <FaJs />, level: "80%" },
-    { name: "React", icon: <FaReact />, level: "85%" },
-    { name: "Tailwind CSS", icon: <SiTailwindcss />, level: "75%" },
-    { name: "Firebase", icon: <SiFirebase />, level: "70%" }
+    { name: "HTML5", level: "90%", color: "#E44D26" },
+    { name: "CSS", level: "85%", color: "#264DE4" },
+    { name: "JavaScript", level: "80%", color: "#F7DF1E" },
+    { name: "React", level: "85%", color: "#61DAFB" },
+    { name: "Tailwind CSS", level: "75%", color: "#38B2AC" },
+    { name: "Java", level: "70%", color: "#007396" },
+    { name: "C++", level: "75%", color: "#3776AB" },
+    { name: "MySQL", level: "80%", color: "#4479A1" },
+  
   ];
 
   return (
@@ -29,18 +50,18 @@ function Portfolio() {
       <header className="portfolio-header">
         <div className="profile-section">
           <img 
-            src="/path/to/profile-image.jpg" 
-            alt="Karina Audoro Vasquez" 
+            src="src\assets\Imagen de WhatsApp 2024-10-14 a las 12.17.23_879c9573.jpg" 
+            alt="" 
             className="profile-image"
           />
           <div className="profile-info">
             <h1>Karina Audoro Vasquez</h1>
-            <h2>Desarrolladora Frontend</h2>
+            <h2>Desarrolladora </h2>
             <div className="social-links">
               <a href="https://github.com/karinavasquez10" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
-              <a href="https://www.linkedin.com/in/karina-vasquez-169aa3316" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/karina-vasquez-169aa3316?trk=contact-info" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
               </a>
             </div>
@@ -52,8 +73,8 @@ function Portfolio() {
       <section className="about-section">
         <h2>Sobre mí</h2>
         <p>
-          Soy una desarrolladora frontend apasionada por crear experiencias web 
-          intuitivas y atractivas. Con experiencia en React y otras tecnologías 
+          Soy una desarrolladora  apasionada por crear experiencias web 
+          intuitivas y atractivas. Con experiencia en HTML,CSS, JAVASCRIPT y otras tecnologías 
           modernas, me especializo en construir aplicaciones web responsivas y 
           centradas en el usuario.
         </p>
@@ -81,7 +102,6 @@ function Portfolio() {
         <div className="projects-grid">
           {projects.map((project, index) => (
             <div key={index} className="project-card">
-              <img src={project.image} alt={project.title} />
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               <div className="project-technologies">
@@ -97,16 +117,7 @@ function Portfolio() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="contact-section">
-        <h2>Contacto</h2>
-        <p>¿Interesado en trabajar juntos? ¡Contáctame!</p>
-        <div className="contact-info">
-          <p>Email: vasquezkarina402@gmail.com</p>
-          <p>LinkedIn: Karina Vasquez</p>
-          <p>GitHub: karinavasquez10</p>
-        </div>
-      </section>
+
     </div>
   );
 }
