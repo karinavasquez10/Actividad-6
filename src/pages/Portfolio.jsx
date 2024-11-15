@@ -1,6 +1,6 @@
 import React from 'react';
 import {  FaGithub, FaLinkedin } from 'react-icons/fa';
-
+import profileImage from '../assets/Imagen.jpg';  
 
 function Portfolio() {
   const projects = [
@@ -33,11 +33,10 @@ function Portfolio() {
   ];
 
   const skills = [
-    { name: "HTML5", level: "90%", color: "#E44D26" },
-    { name: "CSS", level: "85%", color: "#264DE4" },
+    { name: "HTML5", level: "80%", color: "#E44D26" },
+    { name: "CSS", level: "80%", color: "#264DE4" },
     { name: "JavaScript", level: "80%", color: "#F7DF1E" },
-    { name: "React", level: "85%", color: "#61DAFB" },
-    { name: "Tailwind CSS", level: "75%", color: "#38B2AC" },
+    { name: "React", level: "75%", color: "#61DAFB" },
     { name: "Java", level: "70%", color: "#007396" },
     { name: "C++", level: "75%", color: "#3776AB" },
     { name: "MySQL", level: "80%", color: "#4479A1" },
